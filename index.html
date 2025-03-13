@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>图片文字识别工具</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>图片文字识别工具</h1>
+        <p class="description">上传图片，自动识别并提取其中的文字内容</p>
+        
+        <div class="upload-container">
+            <div class="upload-area" id="dropArea">
+                <input type="file" id="fileInput" accept="image/*" hidden>
+                <div class="upload-prompt">
+                    <img src="https://cdn-icons-png.flaticon.com/512/61/61112.png" alt="上传图标" class="upload-icon">
+                    <p>点击或拖拽图片到此处上传</p>
+                </div>
+                <div class="preview-container" id="previewContainer" hidden>
+                    <img id="imagePreview" src="" alt="预览图">
+                </div>
+            </div>
+            <button id="uploadBtn" class="btn">选择图片</button>
+        </div>
+        
+        <div class="progress-container" id="progressContainer" hidden>
+            <div class="progress-bar">
+                <div class="progress" id="progressBar"></div>
+            </div>
+            <p id="statusText">正在处理图片...</p>
+        </div>
+        
+        <div class="result-container" id="resultContainer" hidden>
+            <h2>识别结果</h2>
+            <div class="result-actions">
+                <button id="copyBtn" class="btn btn-copy">复制文本</button>
+                <button id="downloadBtn" class="btn btn-download">下载文本</button>
+            </div>
+            <div class="result-text" id="resultText"></div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>© 2023 图片文字识别工具 | 使用 Tesseract.js 实现</p>
+    </footer>
+
+    <!-- 引入Tesseract.js库 -->
+    <script src="https://cdn.jsdelivr.net/npm/tesseract.js@5.0.3/dist/tesseract.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html> 

@@ -1,0 +1,23 @@
+{
+  "name": "workspace",
+  "version": "1.0.0",
+  "description": "这是一个简单的网页应用，可以从上传的图片中识别并提取文字内容。该工具使用Tesseract.js进行OCR（光学字符识别）处理，支持中文和英文文本识别。",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TiyooGarret/Get_image_text.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TiyooGarret/Get_image_text/issues"
+  },
+  "homepage": "https://github.com/TiyooGarret/Get_image_text#readme",
+  "devDependencies": {
+    "playwright": "^1.52.0"
+  }
+}

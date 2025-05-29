@@ -1,0 +1,17 @@
+
+[Test 1] Drag & Drop upload with real Tesseract
+Worker ready -> dragging file
+File dropped, waiting for result ...
+node:internal/process/promises:394
+    triggerUncaughtException(err, true /* fromPromise */);
+    ^
+
+page.waitForSelector: Timeout 300000ms exceeded.
+Call log:
+[2m  - waiting for locator('#resultContainer:not([hidden])') to be visible[22m
+
+    at /workspace/ocr_real_test.js:66:14 {
+  name: 'TimeoutError'
+}
+
+Node.js v22.15.0
